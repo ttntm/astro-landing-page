@@ -23,6 +23,12 @@ All other dependencies are either linked from a CDN or included in this reposito
 4. run `npm run dev`
 5. open a browser and go to `http://localhost:3000`
 
+**Setup Alternative:**
+
+`npm create astro@latest -- --template ttntm/astro-landing-page`
+
+See: [Starter Templates](https://docs.astro.build/en/install/auto/#starter-templates) in the official docs.
+
 **Basic configuration:**
 
 1. Astro -> `./astro.config.mjs`
