@@ -4,6 +4,8 @@ A simple landing page built with Astro and Tailwind CSS.
 
 > Port of the [11ty](https://github.com/ttntm/11ty-landing-page) & [Hugo](https://github.com/ttntm/hugo-landing-page) versions
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/653a4eb1-32e8-43e6-bacd-c61c4b154ad1/deploy-status)](https://app.netlify.com/sites/quiet-banoffee-2c0612/deploys)
+
 ## How to use this template
 
 **Requirements:**
