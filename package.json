@@ -1,0 +1,21 @@
+{
+  "name": "alp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=dev astro dev",
+    "start": "NODE_ENV=dev astro dev",
+    "build": "NODE_ENV=production astro build",
+    "preview": "astro preview"
+  },
+  "keywords": [],
+  "author": "ttntm",
+  "license": "MIT",
+  "dependencies": {
+    "@astrojs/tailwind": "^4.0.0",
+    "@tailwindcss/typography": "^0.5.9",
+    "astro": "^2.10.12",
+    "tailwindcss": "^3.3.3"
+  }
+}

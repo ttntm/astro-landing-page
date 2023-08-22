@@ -1,0 +1,3 @@
+# Redirect default Netlify subdomain to primary domain
+https://awesomestro.netlify.app/* https://awesomestro.ttntm.me/:splat 301!
+https://main--awesomestro.netlify.app/* https://awesomestro.ttntm.me/:splat 301!

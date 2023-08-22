@@ -1,0 +1,27 @@
+---
+import siteData from '../data/site.json';
+import Footer from '../components/Footer.astro';
+import Head from '../components/Head.astro';
+import JS from '../components/JS.astro';
+import Navbar from '../components/Navbar.astro';
+import '../styles/global.css'
+import '../styles/normalize.css'
+
+const {frontmatter} = Astro.props;
+---
+<html lang={siteData.language}>
+  <Head image={frontmatter.image || undefined} title={`${frontmatter.title} | ${siteData.author}`} />
+  <body>
+    <Navbar />
+    <main id={frontmatter.title} class="w-full flex flex-col justify-center items-center">
+      <div class="self-center w-full sm:w-2/3 xl:w-1/2 px-4 sm:px:0 pt-16">
+        <h1 class="font-bold uppercase tracking-widest text-gray-800 text-2xl mb-4">{frontmatter.title}</h1>
+        <div class="font-light text-black text-lg">
+          <slot />
+        </div>
+      </div>
+    </main>
+    <Footer />
+    <JS />
+  </body>
+</html>

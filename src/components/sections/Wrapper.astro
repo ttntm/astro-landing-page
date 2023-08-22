@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content';
+import About from './About.astro';
+import Features from './Features.astro';
+import Header from './Header.astro';
+import Register from './Register.astro';
+
+const sections = await getCollection('sections');
+---
+<Header />
+{sections.map(section => {
+  switch (section.data.type) {
+    case 'about':
+      return <About sect={section} />
+    
+    case 'features':
+      return <Features sect={section} />
+    
+    case 'register':
+      return <Register sect={section} />
+  
+    default:
+      break;
+  }
+})}

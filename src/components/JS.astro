@@ -1,0 +1,40 @@
+<script is:inline src="https://unpkg.com/popper.js@1"></script>
+<script is:inline src="https://unpkg.com/tippy.js@4"></script>
+<script is:inline>
+  function navToggle() {
+    let btn = document.getElementById('menuBtn');
+    let nav = document.getElementById('menu');
+
+    btn.classList.toggle('open');
+    nav.classList.toggle('flex');
+    nav.classList.toggle('hidden');
+  }
+
+  window.addEventListener('scroll', function () {
+    let btt = document.getElementById('btt');
+
+    if (window.scrollY >= 1080) {
+      btt.classList.remove('hidden');
+      btt.classList.add('block');
+    } else {
+      btt.classList.add('hidden');
+      btt.classList.remove('block');
+    }
+  });
+
+  console.info('Code/Design: ttntm.me');
+
+  const template = document.getElementById('followTip');
+  const container = document.createElement('div');
+
+  container.appendChild(document.importNode(template.content, true));
+
+  tippy('#follow', {
+    content: container.innerHTML,
+    animation: 'scale',
+    duration: 250,
+    arrow: true,
+    placement: 'bottom',
+    interactive: true,
+  });
+</script>

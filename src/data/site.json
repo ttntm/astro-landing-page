@@ -1,0 +1,16 @@
+{
+  "author": "AWE.SOME",
+  "description": "AWE.SOME - An Astro Landing Page Template",
+  "title": "🚀 AWE.SOME - An Astro Landing Page Template",
+  "language": "en",
+  "social": [
+    {
+      "title": "Twitter",
+      "url": "https://twitter.com/#"
+    },
+    {
+      "title": "LinkedIn",
+      "url": "https://linkedin.com/company/#"
+    }
+  ]
+}
