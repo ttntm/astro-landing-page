@@ -9,8 +9,6 @@ interface Props {
 const { image, title } = Astro.props
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const imageURL = image ? new URL(image, Astro.site) : undefined
-const pn = Astro.url.pathname
-const isHome = pn === '/'
 ---
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">

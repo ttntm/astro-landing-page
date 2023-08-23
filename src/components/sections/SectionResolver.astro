@@ -1,0 +1,28 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import About from './About.astro';
+import Features from './Features.astro';
+import Register from './Register.astro';
+
+interface Props {
+  afterTitle: string,
+  sect: CollectionEntry<'sections'>,
+  title: string,
+  type: string
+}
+
+const { afterTitle, sect, title, type } = Astro.props;
+const { Content } = await sect.render();
+---
+
+{type === 'about' && <About title={title}>
+  <Content />
+</About>}
+
+{type === 'features' && <Features afterTitle={afterTitle} title={title}>
+  <Content />
+</Features>}
+
+{type === 'register' && <Register title={title}>
+  <Content />
+</Register>}

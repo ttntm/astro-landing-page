@@ -53,7 +53,7 @@ Page structure and templates are stored in `./src/layouts/` and can be edited th
 
 Best have a look at `./layouts/Base.astro` first to understand how it all comes together - the page itself is constructed from partial templates stored in `./src/components/` and each section has a corresponding template file in the `sections` subfolder.
 
-Sections are processed in alphabetical order (as stored in `./src/content/sections/`) by the `Wrapper.astro` component (`./src/components/sections/`). They're a so called [collection](https://github.com/ttntm/astro-landing-page) that's defined in `./src/content/config.ts`.
+Sections are a so called [collection](https://docs.astro.build/en/guides/content-collections/) that's defined in `./src/content/config.ts`. They are processed in alphabetical order (as stored in `./src/content/sections/`) by the `Wrapper.astro` component (`./src/components/sections/`). The wrapper passes them into the `SectionResolver.astro` component (`./src/components/sections/`); this intermediary resolver should help reduce redundancy in keeping the actual section components as "dumb" as possible.
 
 **Change images:**
 
