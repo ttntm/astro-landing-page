@@ -21,7 +21,7 @@ All other dependencies are either linked from a CDN or included in this reposito
 2. `cd` into the root folder
 3. run `npm install`
 4. run `npm run dev`
-5. open a browser and go to `http://localhost:3000`
+5. open a browser and go to `http://localhost:4321`
 
 **Setup Alternative:**
 
