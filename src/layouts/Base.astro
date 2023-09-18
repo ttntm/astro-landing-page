@@ -3,13 +3,11 @@ import siteData from '../data/site.json';
 import Footer from '../components/Footer.astro';
 import Head from '../components/Head.astro';
 import JS from '../components/JS.astro';
-import Navbar from '../components/Navbar.astro';
 import '../styles/global.css'
 ---
 <html lang={siteData.language}>
   <Head />
-  <body>
-    <Navbar />
+  <body class="font-sans text-gray-800 bg-gray-100">
     <slot />
     <Footer />
     <JS />
