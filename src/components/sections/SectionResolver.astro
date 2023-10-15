@@ -1,8 +1,8 @@
 ---
-import type { CollectionEntry } from 'astro:content';
-import About from './About.astro';
-import Features from './Features.astro';
-import Register from './Register.astro';
+import type { CollectionEntry } from 'astro:content'
+import About from './About.astro'
+import Features from './Features.astro'
+import Register from './Register.astro'
 
 interface Props {
   afterTitle: string,
@@ -11,8 +11,8 @@ interface Props {
   type: string
 }
 
-const { afterTitle, sect, title, type } = Astro.props;
-const { Content } = await sect.render();
+const { afterTitle, sect, title, type } = Astro.props
+const { Content } = await sect.render()
 ---
 
 {type === 'about' && <About title={title}>

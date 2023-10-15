@@ -1,7 +1,9 @@
-import { defineConfig } from 'astro/config';
-import tailwind from "@astrojs/tailwind";
+import { defineConfig } from 'astro/config'
+import tailwind from '@astrojs/tailwind'
 
-const baseURL = process.env.NODE_ENV === 'production' ? 'https://awesomestro.ttntm.me/' : 'http://localhost:4321/';
+const baseURL = process.env.NODE_ENV === 'production'
+  ? 'https://awesomestro.ttntm.me/'
+  : 'http://localhost:4321/'
 
 // https://astro.build/config
 export default defineConfig({
@@ -11,4 +13,4 @@ export default defineConfig({
       applyBaseStyles: false
     })
   ]
-});
+})
