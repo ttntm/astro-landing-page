@@ -3,9 +3,15 @@ import siteData from '../data/site.json'
 
 const pn = Astro.url.pathname
 const isHome = pn === '/'
-const abtLink = isHome ? '#about' : `${Astro.site}#about`
-const ftLink = isHome ? '#features' : `${Astro.site}#features`
-const regLink = isHome ? '#register' : `${Astro.site}#register`
+const abtLink = isHome
+  ? '#about'
+  : `${Astro.site}#about`
+const ftLink = isHome
+  ? '#features'
+  : `${Astro.site}#features`
+const regLink = isHome
+  ? '#register'
+  : `${Astro.site}#register`
 ---
 <nav class="flex flex-col sm:flex-row w-full justify-between items-center px-4 sm:px-6 py-1 bg-white sm:bg-transparent shadow sm:shadow-none">
   <div class="w-full sm:w-auto self-start sm:self-center flex flex-row sm:flex-none flex-no-wrap justify-between items-center">
