@@ -6,6 +6,13 @@ import SectionResolver from './SectionResolver.astro'
 const sections = await getCollection('sections')
 ---
 <Header />
-{sections.map(sect => {
-  return <SectionResolver sect={sect} title={sect.data.title} afterTitle={sect.data.title || ''} type={sect.data.type} />
-})}
+<main>
+  {sections.map(sect => {
+    return <SectionResolver
+      sect={sect}
+      title={sect.data.title}
+      afterTitle={sect.data.afterTitle || ''}
+      type={sect.data.type}
+    />
+  })}
+</main>
