@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "NODE_ENV=dev astro dev",
     "start": "NODE_ENV=dev astro dev",
-    "build": "NODE_ENV=production astro build",
+    "build": "NODE_ENV=production astro build && cp .nojekyll ./docs",
     "preview": "astro preview"
   },
   "keywords": [],
