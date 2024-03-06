@@ -3,12 +3,13 @@ import siteData from '../data/site.json'
 
 const pn = Astro.url.pathname
 const isHome = pn === '/'
+const site = Astro.site
 const abtLink = isHome
   ? '#about'
-  : `${Astro.site}#about`
+  : `${site}#about`
 const ftLink = isHome
   ? '#features'
-  : `${Astro.site}#features`
+  : `${site}#features`
 ---
 <footer class="w-full flex flex-col sm:flex-row sm:justify-center text-lg tracking-wide px-4 sm:px-0 py-16">
   <div class="text-center pr-0 sm:pr-8 py-4">
@@ -53,7 +54,7 @@ const ftLink = isHome
 </div>
 <div class="fixed bottom-0 left-0 m-6">
   <a href="https://github.com/ttntm/astro-landing-page" target="_blank" rel="noopener" title="Get this theme @ GitHub" class="block rounded-full bg-black text-purple-600 hover:bg-white hover:text-black shadow-md p-4">
-    <img src="/img/github.svg" width="30" height="30" class="block" alt="GitHub icon">
+    <img src={`${site}img/github.svg`} width="30" height="30" class="block" alt="GitHub icon">
   </a>
 </div>
 <!-- "Follow" Tooltip template -->

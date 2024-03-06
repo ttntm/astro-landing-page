@@ -10,6 +10,7 @@ const headerListItems = [
   'List',
   'Items Here'
 ]
+const site = Astro.site
 ---
 <header class="header w-full min-h-screen flex flex-col justify-between">
   <Navbar />
@@ -30,7 +31,7 @@ const headerListItems = [
         <p class="font-bold tracking-widest text-4xl">...think about it!</p>
       </div>
       <div class="w-full sm:w-1/2">
-        <img src="/img/undraw_Friends_online_re_r7pq.svg" alt="AWE.SOME header">
+        <img src={`${site}img/undraw_Friends_online_re_r7pq.svg`} alt="AWE.SOME header">
       </div>
     </div>
   </div>
