@@ -37,6 +37,18 @@ See: [Starter Templates](https://docs.astro.build/en/install/auto/#starter-templ
 
 CSS (in `./src/styles/`) is processed by Astro directly; this project is using the [Tailwind integration module](https://docs.astro.build/en/guides/integrations-guide/tailwind/).
 
+**Deployment:**
+
+Astro requires the final deployed URL in its config file.
+
+Replace the placeholder with your site's URL and keep the trailing slash:
+
+```js
+case 'production':
+  build.siteURL = 'https://example.com/'
+  break
+```
+
 **Change Content:**
 
 Page content is stored in
